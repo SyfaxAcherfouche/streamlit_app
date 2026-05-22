@@ -1,9 +1,10 @@
-try:
-    import streamlit as st
-except ImportError:
-    import sys
-    print("Streamlit is not installed. Install it with 'pip install streamlit'.")
-    sys.exit(1)
+import streamlit as st
 
-st.title("Hello, Streamlit!")
-st.write("This is a simple Streamlit app.")
+st.write('HelloMBADIA !')
+
+st.header('st.button')
+
+if st.button('say hello'):
+    st.write('why hello?')
+else:
+    st.write('goodbye')
